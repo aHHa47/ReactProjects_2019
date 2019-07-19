@@ -3,11 +3,11 @@
 import React from 'react';
 import {View} from 'react-native';
 
-const CardItem = (props) =>{
+const CardItem = (props) => {
     return(
 
         <View style= {Styles.containerStyle}>
-            {props.children}
+        {props.children}
         </View>
     );
 };
@@ -23,5 +23,4 @@ const Styles = {
         position: 'relative',
     }
 }
-
 export {CardItem};

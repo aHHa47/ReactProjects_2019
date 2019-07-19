@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux';
+import LibraryReducer from './LibraryReducer';
+import SelectionReducer from './SelectionReducer';
 
 /**
  * The combineReducers helper function turns an object whose values are different reducing 
  * functions into a single reducing function that can pass to createStore.
 */
 export default combineReducers({
-    libraries: () => []
-
+    libraries: LibraryReducer,
+    selectedLibraryId: SelectionReducer
 });
